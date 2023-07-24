@@ -49,7 +49,11 @@ function findRichNode(node) {
             if (isRich(node.alt)) {
                 blurNode(node);
             }
-
+        }
+        if (node.title != undefined && node.title != '') {
+            if (isRich(node.title)) {
+                blurNode(node);
+            }
         }
     }
 }
